@@ -1,0 +1,36 @@
+// imports
+@use "../data" as *;
+
+// components
+@import "./components/navigation/navigation.css";
+@import "./elements/path/path.css";
+@import "./components/aside-filter/aside-filter.css";
+@import "./components/catalogue-section/catalogue-section.css";
+@import "./components/footer/footer.css";
+@import "./components/nav-burger/nav-burger.css";
+
+// global
+.container{
+    max-width: 1300px;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+
+// navigation (to prevent overwriting)
+.nav__container, .burger-menu{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+//active behavior
+.burger--active{
+    display: block;
+}
+
+@media (max-width: $phone-break-450){
+    .nav__container, .burger-menu{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}

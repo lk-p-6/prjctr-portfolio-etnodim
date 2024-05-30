@@ -1,0 +1,26 @@
+@use "../../../data" as *;
+
+.dropdown-check__select{
+    @include raleway-12-semibold; // desktop font for section name
+    color: $black; // color of section name
+    cursor: pointer;
+    display: flex; // for align arrows
+    align-items: center;
+    column-gap: 5px; // gap from text to arrow
+    margin-bottom: 10px; // maring from select to options
+}
+
+// tablet
+@media (max-width: $tablet-break){
+    .dropdown-check__select{
+        @include raleway-16-bold; // font size for tablets
+        margin-bottom: 16px; // margins from select and options
+        cursor: auto; // making cursor to default value for section name
+    }
+}
+@media (max-width: $phone-break-450){
+    .dropdown-check__select{
+        @include raleway-14-bold; // font size for phone
+        margin-bottom: 10px; // margins devices from select and options
+    }
+}

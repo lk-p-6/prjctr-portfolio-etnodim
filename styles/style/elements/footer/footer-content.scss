@@ -1,0 +1,34 @@
+@use "../../../data" as *;
+
+.footer__content{
+    display: flex;
+    padding-bottom: 90px; // padding to the bottom
+    position: relative; // to make this elemnt relativity to childish
+    @include raleway-p; // font 
+}
+
+.footer__nav-list{
+    @include adaptive-width(12, 5, 20px); // width on 5 columns for menu section
+}
+.footer__contact{
+    @include adaptive-width(12, 4, 20px); // width on 4 columns for contact section
+}
+.footer__social{
+    @include adaptive-width(12, 3, 20px); // width on 3 columns for social section
+}
+
+// tablet
+@media (max-width: $tablet-break){
+    .footer__content{
+        justify-content: space-between; // to make footer sections on other sides
+        padding-bottom: 20px; // change bottom padding
+        flex-wrap: wrap; // allow to wrap flex items
+        row-gap: 20px; // gap btw wraped elemetns
+    }
+    .footer__nav-list, .footer__social{
+        width: auto; // reset width for all sections
+    }
+    .footer__contact{
+        width: 100%; // width for the last item to make it on the full width
+    }
+}

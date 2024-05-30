@@ -1,0 +1,52 @@
+@use "../../../data" as *;
+
+.footer__main{
+    padding: 70px 0px 40px; // making inside padding for footer main
+    position: relative; // making it relative to other elements
+    display: flex; 
+    justify-content: center; // making logo to the center
+}
+
+.footer__logo{
+    width: 184px; // width of logo
+    height: 32px; // height of logo
+}
+
+.footer__arrow-nav{
+    position: absolute; // make it outside of elements and free to position
+    width: 30px; // making arrow width
+    height: 57px; // making arrow height
+    display: block;
+    top: -40px; // make it go outside of footer
+}
+.footer__arrow-icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: $tablet-break){
+    .footer__main{
+        padding: 40px 0px; // making inside padding for footer main
+    }
+    .footer__arrow-nav{
+        width: 25px; // making arrow width on tablet
+        height: 45px; // making arrow height on tablet
+        top: -20px; // make it go outside of footer on tablet
+    }
+}
+
+@media (max-width: $phone-break-450){
+    .footer__main{
+        padding: 20px 0px; // making inside padding for footer main
+    }
+    .footer__logo{
+        width: 132px; // width of logo on tablet
+        height: 35px; // height of logo on tablet
+    }
+    .footer__arrow-nav{
+        width: 16px; // making arrow width on tablet
+        height: 30px; // making arrow height on tablet
+        top: -24px; // make it go outside of footer on tablet
+    }
+}

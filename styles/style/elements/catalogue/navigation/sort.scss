@@ -1,0 +1,32 @@
+@use "../../../../data" as *;
+
+.catalogue-nav__sort{
+    display: flex; 
+    column-gap: 10px; // gap btw squares
+}
+
+.catalogue-nav__sort-type{
+    width: 14px; // width for container of square
+    height: 14px; // height for container of square
+    cursor: pointer; 
+    transition: filter $fast-h ease-in-out; // transition for color (filter) on hover
+}
+.catalogue-nav__sort-image{
+    width: 100%; // making width of square on max of his container (14 px)
+    height: 100%; // making height of square on max of his container (14 px)
+    object-fit: contain; 
+}
+.catalogue-nav__sort-type:hover{
+    filter: brightness(.8); // on hover brightness 70%
+}
+
+.catalogue-nav__sort-type--active, .catalogue-nav__sort-type--active:hover{
+    filter: brightness(0); // with class --active brightness of squeare is 0% and on hover of --active the same
+}
+
+// tablet - phone
+@media (max-width: $tablet-break){
+    .catalogue-nav__sort{
+        display: none; // on phone and tablet sort type is not active
+    }
+}

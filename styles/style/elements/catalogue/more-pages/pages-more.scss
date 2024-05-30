@@ -1,0 +1,44 @@
+@use "../../../../data" as *;
+
+.catalogue-pages__more{
+    display: flex;
+    align-items: center; // align text and icon
+    gap: 5px; // gap btw text and icon
+    cursor: pointer;
+}
+
+.catalogue-pages__more-title{
+    position: relative; // making text relative for before element
+}
+.catalogue-pages__more-title::before{
+    content: "";
+    display: block;
+    position: absolute; // making it absolute
+    bottom: 0; // send it to the bottom
+    width: 100%; // make on full width of text
+    height: 1px;
+    background-color: $black;
+
+    transform: scaleX(0); // for hover animation
+    transition: transform $fast-h ease-in-out // transition for transform on hover
+}
+//hover
+.catalogue-pages__more:hover .catalogue-pages__more-title::before{
+    transform: scaleX(1); // making it full width
+}
+
+.catalogue-pages__more-show{
+    width: 18px; // width for icon container
+    height: 18px; // height for icon container
+}
+.catalogue-pages__more-show-image{
+    width: 100%; // width for icon 
+    height: 100%; // height for icon 
+    object-fit: cover;
+}
+
+@media (max-width: $tablet-break){
+    .catalogue-pages__more-title::before{
+        transform: scaleX(1); // for hover animation
+    }
+}

@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Light"), local("Raleway-Light") url(../../fonts/RalewayFont/Raleway-Light.woff) format(woff);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), local("Raleway Regular"), local("Raleway-Regular") url(../../fonts/RalewayFont/Raleway-Regular.woff) format(woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold") url(../../fonts/RalewayFont/Raleway-SemiBold.woff) format(woff);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Bold"), local("Raleway-Bold") url(../../fonts/RalewayFont/Raleway-Bold.woff) format(woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dela";
+  src: url(../../fonts/DelaGothicOne/DelaGothicOne-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.footer__content {
+  display: flex;
+  padding-bottom: 90px;
+  position: relative;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  font-feature-settings: "lnum" 1;
+}
+
+.footer__nav-list {
+  width: calc((100% - 220px) / 12 * 5 + 80px);
+}
+
+.footer__contact {
+  width: calc((100% - 220px) / 12 * 4 + 60px);
+}
+
+.footer__social {
+  width: calc((100% - 220px) / 12 * 3 + 40px);
+}
+
+@media (max-width: 1024px) {
+  .footer__content {
+    justify-content: space-between;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .footer__nav-list, .footer__social {
+    width: auto;
+  }
+  .footer__contact {
+    width: 100%;
+  }
+}/*# sourceMappingURL=footer-content.css.map */

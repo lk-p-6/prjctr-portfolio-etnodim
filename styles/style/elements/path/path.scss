@@ -1,0 +1,38 @@
+@use "../../../data" as *;
+
+.path{
+    @include raleway-12-semibold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.path__details{
+    display: flex;
+    color: $black;
+}
+.path__details-item{
+    display: flex;
+    align-items: center;
+    transition: color $fast-h ease-in-out;
+}
+.path__details-item:not(:last-child)::after{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 1px;
+    background-color: $black;
+    margin: 0px 7px;
+}
+.path__details-item:last-child{
+    @include raleway-12-light;
+}
+
+//hover
+.path__details-item:hover{
+    color: $black-h;
+}
+
+@media (max-width: $tablet-break) {
+    .path{
+        display: none;
+    }
+}

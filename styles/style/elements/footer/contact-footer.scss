@@ -1,0 +1,54 @@
+@use "../../../data" as *;
+
+.footer__contact{
+    display: flex;
+    flex-direction: column; // make contact items column
+    row-gap: 10px; // gap btw items
+}
+
+// title
+.contact__title{
+    position: relative; // make relative to before element
+    width: max-content; // make width max to the text
+    margin-bottom: 2px;
+}
+.contact__title::before{
+    content: "";
+    position: absolute; // make border absolute to position
+    bottom: 1px; // side it to the bottom
+    width: 100%; // make it 91% width
+    height: 1px; // make height for it
+    background-color: $black; // make color for it
+}
+
+// number address
+.contact__tel-number, .contact__address-link{
+    transition: color $fast-h ease-in-out; // transition color to the number and address
+}
+.contact__tel-number:hover, .contact__address-link:hover{
+    color: $black-h; // making color on hover for address and number
+}
+
+// time
+.contact__time-list{
+    display: flex;
+    align-items: center; // make time align center
+    column-gap: 20px; // gap btw two times
+}
+
+//copyright
+.contact__copyright{
+    display: none;
+}
+
+
+// tablet
+@media (max-width: $tablet-break){
+    .footer__contact{
+        order: 3; // to make it 3 section in the flex
+    }
+    .contact__copyright{
+        margin-top: 10px; // space btw copyright and contact
+        display: block;
+    }    
+}

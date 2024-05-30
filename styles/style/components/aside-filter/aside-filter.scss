@@ -1,0 +1,67 @@
+@use "../../../data" as *;
+
+//imports
+@import "../../elements/filter/select.css";
+@import "../../elements/filter/option.css";
+@import "../../elements/filter/custom-checkbox.css";
+@import "../../elements/filter/arrows.css";
+@import "../../elements/filter/count-elements.css";
+@import "../../elements/filter/filter-click.css";
+
+// aside container
+.aside-filter__container{
+    @include adaptive-width(12, 2, 20px);
+    padding-top: 12px;
+    position: absolute;
+}
+
+// aside content
+.aside-filter__content{
+    display: flex; // need for wrap on mobile
+    flex-direction: column;
+    flex-wrap: wrap; // wrap on mobile
+    row-gap: 20px; // gap btw dropdowns
+    align-content: flex-start; // move ellements to start on mobile
+}
+.aside-filter__dropdown-check{
+    width: max-content; // making width of dropdown by their own content
+}
+
+// tablet version
+@media (max-width: $tablet-break){
+    .aside-filter__container{
+       left: 0; // to make my dropdown background fully to th eleft on tablet and phone only
+    }
+
+    .aside-filter__content{
+        width: 390px; // width of background dropdowns on tablet
+        height: 600px; // height of background dropdown on tablet
+        padding: 36px 10px 20px; // paddings for background dropdown
+        margin-top: 42px; // calculate margin from top to filter on tablet
+        background-color: white; // making white background
+        box-shadow: 4px 4px 6px rgba(179, 179, 179, 0.25); // shadow of background dropdown
+        overflow: hidden; // for if elements are too big, they won't go over background
+        position: absolute; // for positioning, cause filter elemnts is in catalogue section
+        left: 0; // to get my background dropdown to the left
+        column-gap: 90px; // gap btw columns of dropdowns
+        z-index: 1; // to cover any other elemetns
+
+        display: none; // inactive moe
+    }
+
+    // aside dropdown effect
+    .aside-filter__content--open{
+        display: flex; // active mode
+    }
+}
+
+// phone version
+@media (max-width: $phone-break-450){
+    .aside-filter__content{
+        row-gap: 10px; // gap btw dropdowns
+        width: 350px; // width of background dropdowns on phone
+        height: 550px; // height of background dropdown on phone
+        padding-top: 30px; // to make my dropdown elements closer to filter text
+        margin-top: 30px; // calculate margin from top to filter on phone
+    }
+}

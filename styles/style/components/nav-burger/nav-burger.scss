@@ -1,0 +1,54 @@
+@use "../../../data" as *;
+
+// imports
+@import "../../elements/burger/burger-icon.css";
+@import "../../elements/burger/burger-list.css";
+@import "../../elements/burger/burger-lang.css";
+@import "../../elements/burger/burger-curren.css";
+
+//style
+.burger-menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 334px;
+    height: 0px; // animation
+    top: -60px; // animation
+    padding: 0px 10px;
+    background-color: #FFF;
+    overflow: hidden;
+    z-index: 3;
+    transition: height 1s ease-in-out, top 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.burger-menu--active{
+    height: 372px; // reveal animation
+    top: 0; // reveal animation
+    box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.25),
+    6px 6px 8px 0px rgba(71, 71, 71, 0.25);
+}
+.logo-burger--active{
+    z-index: 3;
+}
+
+.burger-menu__settings{
+    display: flex;
+    @include raleway-16-regular;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+@media (max-width: $tablet-break){
+    .burger-menu{
+        display: block;
+    }
+}
+@media (max-width: $phone-break-450){
+    .burger-menu{
+        width: 250px;
+    }
+    .burger-menu__settings{
+        font-size: 16px;
+        flex-direction: column;
+    }
+}

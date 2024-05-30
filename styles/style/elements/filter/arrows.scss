@@ -1,0 +1,15 @@
+@use "../../../data" as *;
+
+.dropdown-check__select-arrow, .dropdown-check-click__select-arrow, .dropdown-click__select-arrow{ 
+    transform-origin: center; //to rotate arrows from center
+    transition: transform $mid-h ease-in-out; // transition for rotation of arrows
+}
+.dropdown-check__select-arrow--open, .dropdown-check-click__select-arrow--open, .dropdown-click__select-arrow--open{ //animation class for arrows when dropdowns check and click are opens
+    transform: rotate(-180deg); // rotate of arrows
+}
+
+@media (max-width: $tablet-break){
+    .dropdown-check__select-arrow{
+        display: none; // to hide all arrows on dropdown checks
+    }
+}

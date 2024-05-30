@@ -1,0 +1,45 @@
+@use "../../../data" as *;
+
+// imports
+@import "../../elements/nav/nav-list.css";
+@import "../../elements/nav/logo.css";
+@import "../../elements/nav/dropdown.css";
+@import "../../elements/nav/interactive-icons.css";
+@import "../../elements/nav/cart.css";
+@import "../../elements/nav/burger.css";
+
+//style
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @include raleway-16-regular;
+    color: $black;
+}
+.nav__select-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .nav__tel-number{
+        transition: color .15s ease-in-out;
+    }
+
+    // hovers
+    .nav__tel-number:hover{
+        color: $black-h;
+    }
+}
+.nav__burger, .burger-icon{
+    display: none;
+}
+
+@media (max-width: $tablet-break) {
+    .nav__burger{
+        display: block;
+    }
+    .nav__nav-list, .nav__dropdown-option, .nav__tel-number{
+        display: none;
+    }
+}

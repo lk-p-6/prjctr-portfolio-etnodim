@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Light"), local("Raleway-Light") url(../../fonts/RalewayFont/Raleway-Light.woff) format(woff);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), local("Raleway Regular"), local("Raleway-Regular") url(../../fonts/RalewayFont/Raleway-Regular.woff) format(woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold") url(../../fonts/RalewayFont/Raleway-SemiBold.woff) format(woff);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Bold"), local("Raleway-Bold") url(../../fonts/RalewayFont/Raleway-Bold.woff) format(woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dela";
+  src: url(../../fonts/DelaGothicOne/DelaGothicOne-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.dropdown-option {
+  position: relative;
+}
+
+.dropdown-option__option {
+  display: flex;
+  position: absolute;
+  padding: 15px;
+  left: 50%;
+  transform: translateX(-50%) scaleY(0);
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transform-origin: center top;
+  transition: transform 0.35s ease-in-out;
+}
+.dropdown-option__option .dropdown-option__option-item {
+  transition: color 0.15s ease-in-out;
+}
+.dropdown-option__option .dropdown-option__option-item:hover {
+  color: #616161;
+  cursor: pointer;
+}
+
+.dropdown-option__select {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.dropdown-option__currency .dropdown-option__select .dropdown-option__select-basic {
+  margin-right: 4px;
+  width: 22px;
+  height: 22px;
+}
+.dropdown-option__currency .dropdown-option__select .dropdown-option__select-basic .dropdown-option__select-basic-icon {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.dropdown-option__select:hover + .dropdown-option__option, .dropdown-option__option:hover {
+  transform: translateX(-50%) scaleY(1);
+}/*# sourceMappingURL=dropdown.css.map */

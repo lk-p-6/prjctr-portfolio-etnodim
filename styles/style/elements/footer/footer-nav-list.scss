@@ -1,0 +1,32 @@
+@use "../../../data" as *;
+
+.footer__nav-list{
+    display: flex;
+    column-gap: 50px; // gap btw two lists
+}
+
+.nav-list__list{
+    display: flex;
+    flex-direction: column; // making items column
+    row-gap: 10px; // distance btw items
+
+    .nav-list__item:last-of-type{
+        margin-top: 20px; // margin top to the every last item in the lists
+        color: $red;
+        font-weight: 700; // make it bold
+    }
+    .nav-list__item:last-of-type:hover{
+        color: $red-h; // maki it another red on hover
+    }
+}
+
+// tablet
+@media (max-width: $tablet-break){
+    .footer__nav-list{
+        column-gap: 36px; // gap btw two lists
+        order: 1; // make it first on mobile
+    }
+    .nav-list__item:last-of-type{
+        margin-top: 10px; // margin top to the every last item in the lists
+    }
+}

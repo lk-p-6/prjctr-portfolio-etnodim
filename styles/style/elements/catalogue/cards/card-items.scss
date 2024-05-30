@@ -1,0 +1,99 @@
+@use "../../../../data" as *;
+
+// font
+.card__item{
+    @include raleway-p; // font for cards on desktop
+}
+
+// image
+.card__image-container{
+    width: 100%; // image container width 100%
+    height: 500px; // image container width 507px for desktop
+    position: relative; // to make absolute images relative to this
+}
+.card__image-background{
+    width: 100%; // fit into the container
+    height: 100%; // fit into the height
+    object-fit: cover; 
+    display: block; // not visable if not hover
+    position: absolute; // to position relativaly container
+}
+.card__image-wrapper{
+    width: 100%; // to make width of image wrapper of origin 100%
+    height: 100%; // to make width of image wrapper of origin 100%
+    overflow: hidden; // to hide everething that goes beyond wrapper
+
+    transition: transform $mid-h ease-in-out; // transition for transform on hover for image origin wrapper
+}
+.card__image{
+    width: 100%; // fit into the container
+    height: 100%; // fit into the height
+    object-fit: cover; 
+    object-position: center top; // to make sizing from center top
+    position: absolute; // to make it over image background
+
+    transition: transform $mid-h ease-in-out; // transition for transform on hover for image origin
+}
+
+// hover transition scale
+.card__image-container:hover .card__image-wrapper{
+    transform: scale(.9); // make wrapper smaller
+}
+.card__image-container:hover .card__image{
+    transform: scale(1.5); // make image origin bigger
+}
+
+// caption
+.card__caption{
+    margin-top: 15px; // distance btw image and caption
+    display: flex; // for making
+    flex-direction: column; 
+    gap: 5px; // gap btw name and price
+}
+.card__name{
+    display: -webkit-box; // to allow line-clamp
+    -webkit-line-clamp: 1; // now allowing to wrap after 2 lines
+    -webkit-box-orient: vertical;  
+    overflow: hidden; // hide everething that goes out
+}
+.card__price{
+    font-weight: 700;
+}
+
+// tablet
+@media (max-width: $tablet-break){
+    .card__image-container{
+        height: unset; // image container width unset for tablet
+    }
+    .card__caption{
+        margin-top: 5px; // distance btw image and caption
+        gap: 15px; // gap btw name and price
+    }
+
+    // hover transition disable 
+    .card__image-container:hover .card__image-wrapper{
+        transform: unset; // make wrapper original scale for tablet and phone
+    }
+    .card__image-container:hover .card__image{
+        transform: unset; // make image original scale for tablet and phone
+    }
+    .card__image-background{
+        display: none; // hide background image for tablet and phone
+    }
+    .card__image{
+        position: unset; // make position by it's default value
+    }
+}
+
+// phone 
+@media (max-width: $phone-break-450){
+    .card__item{
+        @include raleway-12-light // font for cards on phont
+    }
+    .card__image-container{
+        height: 200px; // image container width unset for phone
+    }
+    .card__name{
+        -webkit-line-clamp: 2; // now allowing to wrap after 2 lines
+    }
+}

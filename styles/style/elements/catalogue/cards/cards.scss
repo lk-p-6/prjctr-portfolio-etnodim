@@ -1,0 +1,25 @@
+@use "../../../../data" as *;
+
+// card container
+.card{
+    margin-top: 45px; // distance btw nav and csards
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // 2 column with equal width
+    grid-auto-rows: 1fr; // every other row with equal height (shrink on place)
+    gap: 50px; // column and row gap 50px
+}
+
+// tablet
+@media (max-width: $tablet-break){
+    .card{
+        margin-top: 20px; // distance btw nav and csards
+        gap: 35px; // column and row gap 35px
+    }
+}
+
+// phone
+@media (max-width: $phone-break-450){
+    .card{
+        gap: 20px; // column and row gap 20px
+    }
+}

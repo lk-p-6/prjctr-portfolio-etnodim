@@ -1,0 +1,38 @@
+@use "../../../../data" as *;
+
+.dropdown-click{
+    position: relative;
+}
+
+// select
+.dropdown-click__select{
+    display: flex;
+    column-gap: 5px; // gap btw subtitle and title
+    cursor: pointer; // cursor pointer on select element
+}
+
+// option
+.dropdown-click__option{
+    display: none; // inactive element for dropdown effect
+    position: absolute; // to make select on the same align as sort types
+    left: 50%;
+    transform: translateX(-50%); // center vertical
+    width: 100%; // making background same width as select
+    margin-top: 5px; // margin btw select and options
+    background-color: white;
+    box-shadow: 0px 6px 15px rgba($color: #000000, $alpha: .35); // box shadow for background
+    z-index: 1; // to make dropdown click over other elements
+}
+.dropdown-click__option-item{
+    padding: 15px 15px; // inside space and for background animation
+    cursor: pointer; // pointer on any item
+    transition: background-color $fast-h ease-in-out; // transition background color
+}
+.dropdown-click__option-item:hover{
+    background-color: #e6e6e6;
+}
+
+// option dropdown effect
+.dropdown-click__option--active{
+    display: block;
+}

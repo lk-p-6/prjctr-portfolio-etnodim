@@ -1,0 +1,92 @@
+@import "../../elements/filter/select.css";
+@import "../../elements/filter/option.css";
+@import "../../elements/filter/custom-checkbox.css";
+@import "../../elements/filter/arrows.css";
+@import "../../elements/filter/count-elements.css";
+@import "../../elements/filter/filter-click.css";
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Light"), local("Raleway-Light") url(../../fonts/RalewayFont/Raleway-Light.woff) format(woff);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), local("Raleway Regular"), local("Raleway-Regular") url(../../fonts/RalewayFont/Raleway-Regular.woff) format(woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold") url(../../fonts/RalewayFont/Raleway-SemiBold.woff) format(woff);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Bold"), local("Raleway-Bold") url(../../fonts/RalewayFont/Raleway-Bold.woff) format(woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dela";
+  src: url(../../fonts/DelaGothicOne/DelaGothicOne-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.aside-filter__container {
+  width: calc((100% - 220px) / 12 * 2 + 20px);
+  padding-top: 12px;
+  position: absolute;
+}
+
+.aside-filter__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-content: flex-start;
+}
+
+.aside-filter__dropdown-check {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+@media (max-width: 1024px) {
+  .aside-filter__container {
+    left: 0;
+  }
+  .aside-filter__content {
+    width: 390px;
+    height: 600px;
+    padding: 36px 10px 20px;
+    margin-top: 42px;
+    background-color: white;
+    box-shadow: 4px 4px 6px rgba(179, 179, 179, 0.25);
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    -moz-column-gap: 90px;
+         column-gap: 90px;
+    z-index: 1;
+    display: none;
+  }
+  .aside-filter__content--open {
+    display: flex;
+  }
+}
+@media (max-width: 450px) {
+  .aside-filter__content {
+    row-gap: 10px;
+    width: 350px;
+    height: 550px;
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=aside-filter.css.map */

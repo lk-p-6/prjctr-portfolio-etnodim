@@ -1,0 +1,63 @@
+@import "./components/navigation/navigation.css";
+@import "./elements/path/path.css";
+@import "./components/aside-filter/aside-filter.css";
+@import "./components/catalogue-section/catalogue-section.css";
+@import "./components/footer/footer.css";
+@import "./components/nav-burger/nav-burger.css";
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Light"), local("Raleway-Light") url(../../fonts/RalewayFont/Raleway-Light.woff) format(woff);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), local("Raleway Regular"), local("Raleway-Regular") url(../../fonts/RalewayFont/Raleway-Regular.woff) format(woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold") url(../../fonts/RalewayFont/Raleway-SemiBold.woff) format(woff);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Bold"), local("Raleway-Bold") url(../../fonts/RalewayFont/Raleway-Bold.woff) format(woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dela";
+  src: url(../../fonts/DelaGothicOne/DelaGothicOne-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+.nav__container, .burger-menu {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.burger--active {
+  display: block;
+}
+
+@media (max-width: 450px) {
+  .nav__container, .burger-menu {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}/*# sourceMappingURL=style.css.map */

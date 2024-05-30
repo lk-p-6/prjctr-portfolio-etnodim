@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Light"), local("Raleway-Light") url(../../fonts/RalewayFont/Raleway-Light.woff) format(woff);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), local("Raleway Regular"), local("Raleway-Regular") url(../../fonts/RalewayFont/Raleway-Regular.woff) format(woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold") url(../../fonts/RalewayFont/Raleway-SemiBold.woff) format(woff);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Bold"), local("Raleway-Bold") url(../../fonts/RalewayFont/Raleway-Bold.woff) format(woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dela";
+  src: url(../../fonts/DelaGothicOne/DelaGothicOne-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.contact__title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 2px;
+}
+
+.contact__title::before {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+
+.contact__tel-number, .contact__address-link {
+  transition: color 0.15s ease-in-out;
+}
+
+.contact__tel-number:hover, .contact__address-link:hover {
+  color: #616161;
+}
+
+.contact__time-list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.contact__copyright {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .footer__contact {
+    order: 3;
+  }
+  .contact__copyright {
+    margin-top: 10px;
+    display: block;
+  }
+}/*# sourceMappingURL=contact-footer.css.map */

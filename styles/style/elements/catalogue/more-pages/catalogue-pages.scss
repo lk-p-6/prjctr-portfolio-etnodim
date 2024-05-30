@@ -1,0 +1,25 @@
+@use "../../../../data" as *;
+
+.catalogue-pages{
+    margin: 65px 0px 130px; // margin btw cards and footer
+    display: flex;
+    width: 100%; // to make shure that catalogue on full width of container
+    justify-content: center; // all center
+    @include raleway-14-semibold; // main font for desktop
+
+    position: relative; // to make it relativity for other elements
+}
+
+// phone
+@media (max-width: $tablet-break){
+    .catalogue-pages{
+        margin: 51px 0px; // margin btw cards and footer
+        @include raleway-16-bold; // main font for tablet
+    }
+}
+// phone
+@media (max-width: $phone-break-450){
+    .catalogue-pages{
+        @include raleway-14-semibold; // main font for tablet
+    }
+}

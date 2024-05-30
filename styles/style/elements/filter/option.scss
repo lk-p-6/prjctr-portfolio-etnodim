@@ -1,0 +1,60 @@
+@use "../../../data" as *;
+
+.dropdown-check__option{
+    @include raleway-12-light; // desktop font for options of section
+    color: $dark-gray; // color for option of section
+    overflow: hidden; // need to hide option elements in hidden status
+
+    max-height: 0px; // diable height for animtion
+    margin-bottom: -10px; // disable margin in hidden status to determine not needed margins
+
+    transition: max-height $mid-h ease-in-out, margin-bottom $mid-h ease-in-out; // transition of max-height and margin-bottom for animation
+}
+.dropdown-check-size .dropdown-check__option{
+    text-transform: uppercase; // making text on options of size section uppercase
+}
+.dropdown-check__option--open{ // animation class for open dropdown
+    max-height: 150px; // making max-height of dropdown are 150px
+    margin-bottom: unset; // disable margin bottom on dropdown check background
+}
+
+// option items
+.dropdown-check__option-item:not(:last-child){
+    margin-bottom: 5px; // margin btw checkboxes
+}
+.dropdown-check__option-item{
+    transition: color $fast-h ease-in-out; // transition for colors of option items
+}
+.dropdown-check__option-item:hover{
+    color: $gray; // animation on hover for option items
+}
+
+// option labels
+.dropdown-check__option-label{
+    cursor: pointer;
+    position: relative; // to make it container for input absolute elements
+    display: flex; // to align elements center
+    align-items: center;
+    gap: 5px; // gap btw checkbox and text
+}
+
+//tablet version
+@media (max-width: $tablet-break){
+    .dropdown-check__option{
+        max-height: unset; // to make max-height by dedfault value
+        margin-bottom: unset; // to make margin-bottom by default value
+        @include raleway-16-light; // font size for tablets
+    }
+    .dropdown-check__option-item:not(:last-child){
+        margin-bottom: 14px; // margins btw checkbox elements
+    }
+}
+//phone version
+@media (max-width: $phone-break-450){
+    .dropdown-check__option{
+        @include raleway-14-light; // font size for tablets
+    }
+    .dropdown-check__option-item:not(:last-child){
+        margin-bottom: 10px; // margins btw checkbox elements
+    }
+}

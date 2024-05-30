@@ -1,0 +1,149 @@
+@use "./variables" as *;
+@use "./fonts" as *;
+
+// raleway mixins
+@mixin raleway-12-light{
+    font-family: $fm-raleway;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    font-feature-settings: 'lnum' 1;
+}
+
+@mixin raleway-12-semibold{
+    font-family: $fm-raleway;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 166.4%;
+    font-feature-settings: 'lnum' 1;
+}
+
+@mixin raleway-14-light{
+    font-family: $fm-raleway;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 166.19%;
+    font-feature-settings: 'lnum' 1;
+}
+
+@mixin raleway-14-bold{
+    font-family: $fm-raleway;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 166.2%;
+    font-feature-settings: 'lnum' 1;
+}
+
+@mixin raleway-14-subheading{
+    font-family: $fm-raleway;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    font-feature-settings: 'lnum' 1;
+    text-transform: uppercase;
+}
+
+@mixin raleway-14-semibold{
+    font-family: $fm-raleway;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    font-feature-settings: 'lnum' 1;
+    text-transform: uppercase;
+}
+
+@mixin raleway-16-light{
+    font-family: $fm-raleway;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    font-feature-settings: 'lnum' 1;
+}
+
+@mixin raleway-16-regular{
+    font-family: $fm-raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    font-feature-settings: 'lnum' 1;
+}
+
+@mixin raleway-16-bold{
+    font-family: $fm-raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    font-feature-settings: 'lnum' 1;
+}
+
+@mixin raleway-p{
+    font-family: $fm-raleway;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+    font-feature-settings: 'lnum' 1;
+}
+
+@mixin raleway-p-bold{
+    font-family: $fm-raleway;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    font-feature-settings: 'lnum' 1;
+}
+
+// dela mixins
+@mixin dela-h1{
+    font-family: $fm-dela;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 93px;
+    font-feature-settings: 'lnum' 1;
+    text-transform: uppercase;
+}
+
+@mixin dela-h2{
+    font-family: $fm-dela;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-feature-settings: 'lnum' 1;
+    text-transform: uppercase;
+}
+
+@mixin dela-h1-mob{
+    font-family: $fm-dela;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.1;
+    font-feature-settings: 'lnum' 1;
+    text-transform: uppercase;
+}
+
+@mixin dela-h2-mob{
+    font-family: $fm-dela;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-feature-settings: 'lnum' 1;
+    text-transform: uppercase;
+}
+
+@mixin dela-menu{
+    font-family: $fm-dela;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    font-feature-settings: 'lnum' 1;
+    text-transform: uppercase;
+}
+
+// adaptive
+@mixin adaptive-width($columnCount, $columnWant, $gapSize){
+    width: calc((100% - ($columnCount - 1) * $gapSize) / $columnCount * $columnWant + ($columnWant - 1) * $gapSize);
+}
+
+// functions
+@function adaptiveColumnValue($columnCount, $columnWant, $gapSize){
+    @return calc((100% - ($columnCount - 1) * $gapSize) / $columnCount * $columnWant + ($columnWant - 1) * $gapSize);
+}

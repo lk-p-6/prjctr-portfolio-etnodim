@@ -1,0 +1,28 @@
+@use "../../../data" as *;
+
+.dropdown-check__option-check{
+    position: absolute; // to make absolute relativaly to label
+    width: 10px; // width of input as custom checkbox
+    height: 10px; // height of input as custom checkbox
+    top: 50%; // to put it into center of custom checkbox
+    transform: translateY(-50%); // calculate extra space
+    opacity: 0; // to make it invisible but not unclickable
+}
+.dropdown-check__option-checkmark{
+    display: inline-block; // make custom checkbox inline-block
+    width: 10px; // width of custom checkbox
+    height: 10px; // height of custom checkbox
+    border: 1px solid $dark-gray; // border for custom checkbox
+    position: relative; // to make it container for before absolute element
+}
+.dropdown-check__option-check:checked + .dropdown-check__option-checkmark::before{
+    content: ""; // make custom checkbox full when input is on
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: $dark-gray; // fulfil all empty space in custom checkbox with color
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // to center inside fulfilnes of checkbox
+}

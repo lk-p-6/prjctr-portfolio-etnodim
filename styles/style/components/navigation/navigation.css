@@ -1,0 +1,78 @@
+@import "../../elements/nav/nav-list.css";
+@import "../../elements/nav/logo.css";
+@import "../../elements/nav/dropdown.css";
+@import "../../elements/nav/interactive-icons.css";
+@import "../../elements/nav/cart.css";
+@import "../../elements/nav/burger.css";
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Light"), local("Raleway-Light") url(../../fonts/RalewayFont/Raleway-Light.woff) format(woff);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), local("Raleway Regular"), local("Raleway-Regular") url(../../fonts/RalewayFont/Raleway-Regular.woff) format(woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold") url(../../fonts/RalewayFont/Raleway-SemiBold.woff) format(woff);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Bold"), local("Raleway-Bold") url(../../fonts/RalewayFont/Raleway-Bold.woff) format(woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dela";
+  src: url(../../fonts/DelaGothicOne/DelaGothicOne-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  font-feature-settings: "lnum" 1;
+  color: #000000;
+}
+
+.nav__select-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav__select-section .nav__tel-number {
+  transition: color 0.15s ease-in-out;
+}
+.nav__select-section .nav__tel-number:hover {
+  color: #616161;
+}
+
+.nav__burger, .burger-icon {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .nav__burger {
+    display: block;
+  }
+  .nav__nav-list, .nav__dropdown-option, .nav__tel-number {
+    display: none;
+  }
+}/*# sourceMappingURL=navigation.css.map */

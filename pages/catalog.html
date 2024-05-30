@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset/reset.css">
+    <link rel="stylesheet" href="../styles/style/style.css">
+    <title>ETNODIM</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container nav__container">
+            <div class="nav__list-section">
+                <button class="burger nav__burger">
+                    <img src="../images/icons/nav-icons/icon-burger.svg" alt="open side menu" class="burger__icon-open">
+                </button>
+                <div class="burger-menu">
+                    <button class="burger-icon burger-menu__icon">
+                        <img src="../images/icons/nav-icons/burger/icon-close-burger.svg" alt="open side menu" class="burger__icon-close">
+                    </button>
+                    <ul class="burger-list burger-menu__list">
+                        <li class="burger-list__item burger-list__item--active">
+                            <a href="#" class="burger-list__link">Каталог</a>
+                        </li>
+                        <li class="burger-list__item">
+                            <a href="#" class="burger-list__link">Знижки</a>
+                        </li>
+                        <li class="burger-list__item">
+                            <a href="#" class="burger-list__link">Блог</a>
+                        </li>
+                        <li class="burger-list__item">
+                            <a href="#" class="burger-list__link">Про нас</a>
+                        </li>
+                    </ul>
+                    <div class="burger-menu__settings">
+                        <div class="burger-lang burger-menu__lang">
+                            <ul class="burger-lang__list">
+                                <li class="burger-lang__item burger-lang__item--active">UA</li>
+                                <li class="burger-lang__item">RU</li>
+                                <li class="burger-lang__item">EN</li>
+                            </ul>
+                        </div>
+                        <div class="burger-curren burger-menu__curren">
+                            <ul class="burger-curren__list">
+                                <li class="burger-curren__item">
+                                    <img src="../images/icons/nav-icons/burger/icon-menu-uan.svg" alt="grivni" class="burger-curren__icon">
+                                </li>
+                                <li class="burger-curren__item">
+                                    <img src="../images/icons/nav-icons/burger/icon-menu-usd.svg" alt="dolari" class="burger-curren__icon">
+                                </li>
+                                <li class="burger-curren__item">
+                                    <img src="../images/icons/nav-icons/burger/icon-menu-eur.svg" alt="euro" class="burger-curren__icon">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-list nav__nav-list">
+                    <li class="nav-list__item nav-list__item--active">
+                        <a href="#" class="nav-list__link">Каталог</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Знижки</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Блог</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Про нас</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="logo nav__logo logo-burger--active">
+                <img src="../images/icons/nav-icons/icon-logo.svg" alt="site logo" class="logo__icon" srcset="../images/icons/nav-icons/icon-logo-slim.svg 95w">
+            </a>
+            <div class="nav__select-section">
+                <div class="dropdown-option dropdown-option__lang nav__dropdown-option">
+                    <div class="dropdown-option__select">
+                        <span class="dropdown-option__select-basic">UA</span>
+                        <img src="../images/icons/nav-icons/icon-dropdown.svg" alt="dropdown arrow select" class="dropdown-option__select-arrow dropdown-option__select-arrow--open">
+                    </div>
+                    <ul class="dropdown-option__option">
+                        <li class="dropdown-option__option-item">EN</li>
+                        <li class="dropdown-option__option-item">PL</li>
+                        <li class="dropdown-option__option-item">UK</li>
+                    </ul>
+                </div>
+                <div class="dropdown-option dropdown-option__currency nav__dropdown-option">
+                    <div class="dropdown-option__select">
+                        <span class="dropdown-option__select-basic">
+                            <img src="../images/icons/nav-icons/icon-currency.svg" alt="currency choosing" class="dropdown-option__select-basic-icon">
+                        </span>
+                        <img src="../images/icons/nav-icons/icon-dropdown.svg" alt="dropdown arrow select" class="dropdown-option__select-arrow dropdown-option__select-arrow--open">
+                    </div>
+                    <ul class="dropdown-option__option">
+                        <li class="dropdown-option__option-item">€</li>
+                    </ul>
+                </div>
+                <a href="tel:380978889292" class="tel-number nav__tel-number">+38 097 888 92 92</a>
+                <a href="#" class="search nav__search">
+                    <img src="../images/icons/nav-icons/icon-loupe.svg" alt="search" class="search__icon">
+                </a>
+                <a href="#" class="cart nav__cart">
+                    <img src="../images/icons/nav-icons/icon-cart.svg" alt="cart" class="cart__icon">
+                    <span class="cart__count">1</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="container main__container">
+            <div class="path">
+                <ul class="path__details">
+                    <li class="path__details-item">
+                        <a href="#" class="path__details-link">Головна</a>
+                    </li>
+                    <li class="path__details-item">
+                        <a href="#" class="path__details-link">Жінкам</a>
+                    </li>
+                    <li class="path__details-item">
+                        <a href="#" class="path__details-link">Жіночі вишиванки</a>
+                    </li>
+                </ul>
+            </div>
+            <aside class="aside-filter">
+                <div class="aside-filter__container">
+                    <div class="aside-filter__content">
+                        <div class="dropdown-check dropdown-check-size aside-filter__dropdown-check">
+                            <div class="dropdown-check__select">
+                                <span class="dropdown-check__select-basic">Розмір</span>
+                                <img src="../images/icons/nav-icons/icon-dropdown.svg" alt="dropdown arrow select" class="dropdown-check__select-arrow">
+                            </div>
+                            <ul class="dropdown-check__option">
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="size" value="xxs">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        32 | xxs <span class="dropdown-check__option-label-count">53</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="size" value="xs">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        34 | xs <span class="dropdown-check__option-label-count">60</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="size" value="s">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        36 | s <span class="dropdown-check__option-label-count">60</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="size" value="m">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        38 | m <span class="dropdown-check__option-label-count">60</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="size" value="l">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        40 | l <span class="dropdown-check__option-label-count">60</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="size" value="xl">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        42 | xl <span class="dropdown-check__option-label-count">58</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="size" value="xxl">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        46 | xxl <span class="dropdown-check__option-label-count">13</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="size" value="xxxl">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        48 | xxxl <span class="dropdown-check__option-label-count">4</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-check dropdown-check-color aside-filter__dropdown-check">
+                            <div class="dropdown-check__select">
+                                <span class="dropdown-check__select-basic">Колір</span>
+                                <img src="../images/icons/nav-icons/icon-dropdown.svg" alt="dropdown arrow select" class="dropdown-check__select-arrow">
+                            </div>
+                            <ul class="dropdown-check__option">
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="color" value="white">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        білий <span class="dropdown-check__option-label-count">13</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="color" value="black">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        чорний <span class="dropdown-check__option-label-count">8</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="color" value="beige">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        бежевий <span class="dropdown-check__option-label-count">3</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="color" value="green">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        зелений <span class="dropdown-check__option-label-count">7</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="color" value="blue">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        синій <span class="dropdown-check__option-label-count">10</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-check dropdown-check-season aside-filter__dropdown-check">
+                            <div class="dropdown-check__select">
+                                <span class="dropdown-check__select-basic">Сезон</span>
+                                <img src="../images/icons/nav-icons/icon-dropdown.svg" alt="dropdown arrow select" class="dropdown-check__select-arrow">
+                            </div>
+                            <ul class="dropdown-check__option">
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="season" value="easy-colection">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        easy collection <span class="dropdown-check__option-label-count">3</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="season" value="all-seasons">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        усі сезони <span class="dropdown-check__option-label-count">46</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-check dropdown-check-fabric aside-filter__dropdown-check">
+                            <div class="dropdown-check__select">
+                                <span class="dropdown-check__select-basic">Тканина</span>
+                                <img src="../images/icons/nav-icons/icon-dropdown.svg" alt="dropdown arrow select" class="dropdown-check__select-arrow">
+                            </div>
+                            <ul class="dropdown-check__option">
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="fabric" value="linen">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        льон <span class="dropdown-check__option-label-count">60</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="fabric" value="sateen">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        сатин <span class="dropdown-check__option-label-count">1</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-check dropdown-check-sleeve aside-filter__dropdown-check">
+                            <div class="dropdown-check__select">
+                                <span class="dropdown-check__select-basic">Рукав</span>
+                                <img src="../images/icons/nav-icons/icon-dropdown.svg" alt="dropdown arrow select" class="dropdown-check__select-arrow">
+                            </div>
+                            <ul class="dropdown-check__option">
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="sleeve" value="long-sleeve">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        довгий рукав <span class="dropdown-check__option-label-count">49</span>
+                                    </label>
+                                </li>
+                                <li class="dropdown-check__option-item">
+                                    <label class="dropdown-check__option-label">
+                                        <input class="dropdown-check__option-check" type="checkbox" name="sleeve" value="3-4-sleeve">
+                                        <span class="dropdown-check__option-checkmark"></span>
+                                        3/4 рукав <span class="dropdown-check__option-label-count">11</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section class="catalogue">
+                <div class="catalogue__container">
+                    <div class="catalogue-nav">
+                        <div class="dropdown-check-click catalogue-nav__dropdown-check-click">
+                            <span class="dropdown-check-click__title">Фільтри</span>
+                            <img src="../images/icons/nav-icons/icon-dropdown.svg" alt="dropdown arrow select" class="dropdown-check-click__select-arrow">
+                        </div>
+                        <div class="catalogue-nav__filter">
+                            <div class="catalogue-nav__sort">
+                                <div class="catalogue-nav__sort-type catalogue-nav__sort-type--active">
+                                    <img src="../images/icons/catalogue-icons/sort-2x2-icon.svg" alt="sort 2 on 2" class="catalogue-nav__sort-image">
+                                </div>
+                               <div class="catalogue-nav__sort-type">
+                                    <img src="../images/icons/catalogue-icons/sort-3x3-icon.svg" alt="sort 3 on 3" class="catalogue-nav__sort-image">
+                                </div>
+                            </div>
+                            <div class="dropdown-click dropdown-click-filter catalogue-nav__dropdown-click">
+                                <div class="dropdown-click__select">
+                                    <span class="dropdown-click__select-subtitle">Сортувати за:</span>
+                                    <span class="dropdown-click__select-title">новинки</span>
+                                    <img src="../images/icons/nav-icons/icon-dropdown.svg" alt="dropdown arrow select" class="dropdown-click__select-arrow">
+                                </div>
+                                <ul class="dropdown-click__option">
+                                    <li class="dropdown-click__option-item">Релевантністю</li>
+                                    <li class="dropdown-click__option-item">Сама низька ціна</li>
+                                    <li class="dropdown-click__option-item">Сама висока ціна</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2 class="catalogue-nav__title-h2">Жіночі вишиванки</h2>
+                    </div>
+                    <div class="card catalogue__card">
+                        <figure class="card__item">
+                            <a href="#" class="card__link">
+                                <div class="card__image-container">
+                                    <img src="../images/card-images/hover-image.webp" alt="image background" class="card__image-background">
+                                    <div class="card__image-wrapper">
+                                        <img src="../images/card-images/lito-image.webp" alt="Вишиванка з рослинним орнаментом Lito" class="card__image">
+                                    </div>
+                                </div>
+                                <figcaption class="card__caption">
+                                    <p class="card__name">Вишиванка з рослинним орнаментом Lito</p>
+                                    <span class="card__price">2 800 грн.</span>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="card__item">
+                            <a href="#" class="card__link">
+                                <div class="card__image-container">
+                                    <img src="../images/card-images/hover-image.webp" alt="image background" class="card__image-background">
+                                    <div class="card__image-wrapper">
+                                        <img src="../images/card-images/falka-image.webp" alt="Вишиванка блакитного кольору з рослинним орнаментом Fialka" class="card__image">
+                                    </div>
+                                </div>
+                                <figcaption class="card__caption">
+                                    <p class="card__name">Вишиванка блакитного кольору з рослинним орнаментом Fialka</p>
+                                    <span class="card__price">3 400 грн.</span>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="card__item">
+                            <a href="#" class="card__link">
+                                <div class="card__image-container">
+                                    <img src="../images/card-images/hover-image.webp" alt="image background" class="card__image-background">
+                                    <div class="card__image-wrapper">
+                                        <img src="../images/card-images/nezalezhni-image.webp" alt="Лляна вишиванка з геометричним орнаментом Nezalezhni" class="card__image">
+                                    </div>
+                                </div>
+                                <figcaption class="card__caption">
+                                    <p class="card__name">Лляна вишиванка з геометричним орнаментом Nezalezhni</p>
+                                    <span class="card__price">4 200 грн.</span>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="card__item">
+                            <a href="#" class="card__link">
+                                <div class="card__image-container">
+                                    <img src="../images/card-images/hover-image.webp" alt="image background" class="card__image-background">
+                                    <div class="card__image-wrapper">
+                                        <img src="../images/card-images/kashtan-image.webp" alt="Вишиванка з рослинним орнаментом Kashtan" class="card__image">
+                                    </div>
+                                </div>
+                                <figcaption class="card__caption">
+                                    <p class="card__name">Вишиванка з рослинним орнаментом Kashtan</p>
+                                    <span class="card__price">3 800 грн.</span>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="card__item">
+                            <a href="#" class="card__link">
+                                <div class="card__image-container">
+                                    <img src="../images/card-images/hover-image.webp" alt="image background" class="card__image-background">
+                                    <div class="card__image-wrapper">
+                                        <img src="../images/card-images/indi-image.webp" alt="Легка блузка вільного крою з орнаментом Indi" class="card__image">
+                                    </div>
+                                </div>
+                                <figcaption class="card__caption">
+                                    <p class="card__name">Легка блузка вільного крою з орнаментом Indi</p>
+                                    <span class="card__price">3 800 грн.</span>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="card__item">
+                            <a href="#" class="card__link">
+                                <div class="card__image-container">
+                                    <img src="../images/card-images/hover-image.webp" alt="image background" class="card__image-background">
+                                    <div class="card__image-wrapper">
+                                        <img src="../images/card-images/svitanok-image.webp" alt="Біла вишиванка вільного крою Svitanok" class="card__image">
+                                    </div>
+                                </div>
+                                <figcaption class="card__caption">
+                                    <p class="card__name">Біла вишиванка вільного крою Svitanok</p>
+                                    <span class="card__price">2 980 грн.</span>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="catalogue-pages">
+                        <div class="catalogue-pages__more">
+                            <h3 class="catalogue-pages__more-title">Показати більше</h3>
+                            <div class="catalogue-pages__more-show">
+                                <img src="../images/icons/catalogue-icons/show-more-icon.svg" alt="show more icon" class="catalogue-pages__more-show-image">
+                            </div>
+                        </div>
+                        <ul class="catalogue-pages__select">
+                            <li class="catalogue-pages__select-item catalogue-pages__select-item--active">1</li>
+                            <li class="catalogue-pages__select-item">2</li>
+                            <li class="catalogue-pages__select-item">3</li>
+                            <li class="catalogue-pages__select-item"><span class="catalogue-pages__select-item-count">6</span> Наступна</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__main">
+                <a href="#" class="logo footer__logo">
+                    <img src="../images/icons/nav-icons/icon-logo.svg" alt="site logo" class="logo__icon" srcset="../images/icons/nav-icons/icon-logo-slim.svg 95w">
+                </a>
+                <a href="#" class="footer__arrow-nav">
+                    <img src="../images/icons/footer/arrow-to-top-icon.svg" alt="arrow to the top" class="footer__arrow-icon">
+                </a>
+            </div>
+            <div class="footer__content">
+                <div class="nav-list footer__nav-list">
+                    <ul class="nav-list__list">
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Про нас</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Команда</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Блог</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Drabyna</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list__list">
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Цікава інформація</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Вакансії</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Доставка та оплата</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Етнодім Маніфест</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact footer__contact">
+                    <h4 class="contact__title">Контакти</h4>
+                    <a href="tel:380978889292" class="contact__tel-number">+38 097 888 92 92</a>
+                    <address class="contact__address">
+                        <a href="#" class="contact__address-link">Україна, м. Київ, вул. Верхній Вал 58/28</a>
+                    </address>
+                    <time class="contact__time">
+                        <ul class="contact__time-list">
+                            <li class="contact__time-item">пн-пт 10:00-20:00</li>
+                            <li class="contact__time-item">сб-нд 11:00-19:00</li>
+                        </ul>
+                    </time>
+                    <div class="contact__copyright">
+                        <a href="#" class="contact__copyright-link">© «Етнодім» 2009-2021</a>
+                    </div>
+                </div> 
+                <div class="social footer__social">
+                    <div class="social__content">
+                        <h4 class="social__title">Соціальні мережі</h4>
+                        <ul class="social__icon-list">
+                            <li class="social__icon-list-item">
+                                <a href="#" class="social__icon-list-link">
+                                    <img src="../images/icons/footer/socials/facebook-icon.svg" alt="facebook icon" class="social__icon-list-icon">
+                                </a>
+                            </li>
+                            <li class="social__icon-list-item">
+                                <a href="../images/icons/footer/socials/youtube-icon.svg" class="social__icon-list-link">
+                                    <img src="../images/icons/footer/socials/youtube-icon.svg" alt="youtube icon" class="social__icon-list-icon">
+                                </a>
+                            </li>
+                            <li class="social__icon-list-item">
+                                <a href="#" class="social__icon-list-link">
+                                    <img src="../images/icons/footer/socials/mail-icon.svg" alt="mail icon" class="social__icon-list-icon">
+                                </a>
+                            </li>
+                            <li class="social__icon-list-item">
+                                <a href="#" class="social__icon-list-link">
+                                    <img src="../images/icons/footer/socials/pinterest-icon.svg" alt="pinterest icon" class="social__icon-list-icon">
+                                </a>
+                            </li>
+                            <li class="social__icon-list-item">
+                                <a href="#" class="social__icon-list-link">
+                                    <img src="../images/icons/footer/socials/instagram-icon.svg" alt="instagram icon" class="social__icon-list-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social__copyright">
+                        <a href="#" class="social__copyright-link">© «Етнодім» 2009-2021</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/burger-dropdown/burger-dropdown.js"></script>
+    <script src="../scripts/filter/dropdown-check.js"></script>
+    <script src="../scripts/filter/dropdown-click.js"></script>
+    <script src="../scripts/catalogue/catalogue-sort-type.js"></script>
+    <script src="../scripts/catalogue/dropdown-click.js"></script>
+</body>
+</html>

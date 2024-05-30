@@ -1,0 +1,8 @@
+.dropdown-check__option-label-count::before{
+    content: "("; // additing bracket for count option
+    margin-right: 1px; 
+}
+.dropdown-check__option-label-count::after{
+    content: ")"; // additing bracket for count option
+    margin-left: 1px;
+}

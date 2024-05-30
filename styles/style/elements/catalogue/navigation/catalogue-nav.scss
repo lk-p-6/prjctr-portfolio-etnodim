@@ -1,0 +1,44 @@
+@use "../../../../data" as *;
+
+.catalogue-nav{
+    display: flex;
+    justify-content: space-between; // making sort on left side and h2 on right side
+    align-items: center; // making h2 and sort aligned on desktop
+    @include raleway-12-light; // font of text in filter section on desktop
+    color: $black; 
+}
+
+// catalogue navigation title h2
+.catalogue-nav__title-h2{
+    @include dela-h2; // font for h2 on desktop
+}
+
+// tablet
+@media (max-width: $tablet-break){
+    .catalogue-nav{
+        flex-wrap: wrap; // allowing to wrap elements inside flex
+        row-gap: 15px; // gap btw rows of wrap elements
+        @include raleway-14-light; // font of text in filter section on tablet
+    }
+    .catalogue-nav__title-h2{
+        order: 1; // making title the first element
+        width: 100%; // making title on full width 
+        text-align: end; // making him on the right side
+        font-size: 28px; // font for h2 on the tablet
+    }
+    .catalogue-nav__dropdown-check-click{
+        order: 2; // making filters the second element (first element on second line)
+    }
+    .catalogue-nav__filter{
+        order: 3; // making sort the third element (second element on second line)
+    }
+}
+
+@media (max-width: $phone-break-450){
+    .catalogue-nav{
+        @include raleway-12-light; // font of text in filter section on phone
+    }
+    .catalogue-nav__title-h2{
+        @include dela-h2-mob; // font for h2 on phone
+    }
+}

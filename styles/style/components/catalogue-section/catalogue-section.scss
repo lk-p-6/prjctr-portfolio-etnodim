@@ -1,0 +1,32 @@
+@use "../../../data" as *;
+
+// navitgation
+@import "../../elements/catalogue/navigation/catalogue-nav.css";
+@import "../../elements/catalogue/navigation/filter.css";
+@import "../../elements/catalogue/navigation/dropdown-click.css";
+@import "../../elements/catalogue/navigation/sort.css";
+
+// cards
+@import "../../elements/catalogue/cards/cards.css";
+@import "../../elements/catalogue/cards/card-items.css";
+
+// more pages
+@import "../../elements/catalogue/more-pages/catalogue-pages.css";
+@import "../../elements/catalogue/more-pages/pages-more.css";
+@import "../../elements/catalogue/more-pages/pages-select.css";
+
+.catalogue__container{
+    @include adaptive-width(12, 10, 20px); // making width by 10 columns
+    margin-left: auto; // making it to the right side
+}
+
+// tablet
+@media (max-width: $tablet-break){
+    .catalogue{
+        margin-top: 20px; // making distance btw menu and catalogue section
+    }
+    .catalogue__container{
+        width: 100%; // making width full
+        margin-left: unset; // unset maring left
+    }
+}

@@ -1,0 +1,6 @@
+.catalogue-nav__filter {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 13px;
+       column-gap: 13px;
+}/*# sourceMappingURL=filter.css.map */

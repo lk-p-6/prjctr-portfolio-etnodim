@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Light"), local("Raleway-Light") url(../../fonts/RalewayFont/Raleway-Light.woff) format(woff);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), local("Raleway Regular"), local("Raleway-Regular") url(../../fonts/RalewayFont/Raleway-Regular.woff) format(woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold") url(../../fonts/RalewayFont/Raleway-SemiBold.woff) format(woff);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Bold"), local("Raleway-Bold") url(../../fonts/RalewayFont/Raleway-Bold.woff) format(woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dela";
+  src: url(../../fonts/DelaGothicOne/DelaGothicOne-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.burger-menu__list {
+  margin: 32px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: Dela, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  font-feature-settings: "lnum" 1;
+  text-transform: uppercase;
+}
+
+.burger-list__item {
+  transition: color 0.1s ease-in-out;
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.burger-list__item:hover {
+  color: #cf6674;
+}
+
+.burger-list__item--active {
+  color: #DA1F39;
+}
+
+.burger-list__item--active::after {
+  content: url(../../../../images/icons/nav-icons/burger/icon-more-menu.svg);
+  width: 10px;
+  height: 19px;
+  margin-left: 13px;
+}/*# sourceMappingURL=burger-list.css.map */

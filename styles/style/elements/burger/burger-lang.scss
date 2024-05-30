@@ -1,0 +1,35 @@
+@use "../../../data" as *;
+
+//style
+.burger-menu__lang{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+.burger-lang__list{
+    display: flex;
+    gap: 25px;
+}
+.burger-lang__item{
+    transition: color .1s ease-in-out;
+}
+.burger-lang__item:hover{
+    color: $black-h;
+    cursor: pointer;
+}
+
+.burger-lang__item--active{
+    font-weight: bold;
+}
+
+@media (max-width: $phone-break-450){
+    .burger-menu__lang{
+        margin-right: 0px;
+        width: 120px;
+    }
+    .burger-lang__list{
+        gap: 0px;
+        width: 100%;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,58 @@
+@import "../../elements/catalogue/navigation/catalogue-nav.css";
+@import "../../elements/catalogue/navigation/filter.css";
+@import "../../elements/catalogue/navigation/dropdown-click.css";
+@import "../../elements/catalogue/navigation/sort.css";
+@import "../../elements/catalogue/cards/cards.css";
+@import "../../elements/catalogue/cards/card-items.css";
+@import "../../elements/catalogue/more-pages/catalogue-pages.css";
+@import "../../elements/catalogue/more-pages/pages-more.css";
+@import "../../elements/catalogue/more-pages/pages-select.css";
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Light"), local("Raleway-Light") url(../../fonts/RalewayFont/Raleway-Light.woff) format(woff);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), local("Raleway Regular"), local("Raleway-Regular") url(../../fonts/RalewayFont/Raleway-Regular.woff) format(woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold") url(../../fonts/RalewayFont/Raleway-SemiBold.woff) format(woff);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Bold"), local("Raleway-Bold") url(../../fonts/RalewayFont/Raleway-Bold.woff) format(woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dela";
+  src: url(../../fonts/DelaGothicOne/DelaGothicOne-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.catalogue__container {
+  width: calc((100% - 220px) / 12 * 10 + 180px);
+  margin-left: auto;
+}
+
+@media (max-width: 1024px) {
+  .catalogue {
+    margin-top: 20px;
+  }
+  .catalogue__container {
+    width: 100%;
+    margin-left: unset;
+  }
+}/*# sourceMappingURL=catalogue-section.css.map */

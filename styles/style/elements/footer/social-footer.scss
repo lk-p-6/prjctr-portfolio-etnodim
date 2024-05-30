@@ -1,0 +1,76 @@
+@use "../../../data" as *;
+
+// social
+.footer__social{
+    display: flex;
+    flex-direction: column; // make copyright and socials column
+    justify-content: space-between; // to make copyright and social on othe sides
+}
+
+// title
+.social__title{
+    position: relative; // make relative to before element
+    width: max-content; // make width max to the text
+    margin-bottom: 2px;
+}
+.social__title::before{
+    content: "";
+    position: absolute; // make border absolute to position
+    bottom: 1px; // side it to the bottom
+    width: 100%; // make it 91% width
+    height: 1px; // make height for it
+    background-color: $black; // make color for it
+}
+
+
+// socials
+.social__icon-list{
+    display: flex;
+    margin-top: 14px; // space btw social icons and title
+    column-gap: 20px; // space btw social icons
+}
+.social__icon-list-link{
+    width: 22px; // make width for container of icons
+    height: 22px; // make width for container of icons
+    display: block; // make link block to apply width and height
+
+    transition: filter $fast-h ease-in-out; // transition on hover for social icons
+}
+.social__icon-list-link:hover{
+    filter: brightness(.8); // hover effect on icons
+}
+.social__icon-list-icon{
+    width: 100%; // make width for icons 100%
+    height: 100%; // make width for icons 100%
+    object-fit: contain;
+}
+
+// copyright
+.social__copyright{
+    transition: color $fast-h ease-in-out; // make transition for color for copyright
+}
+.social__copyright:hover{
+    color: $black-h; // change color on hover for copyright
+}
+
+// tablet
+@media (max-width: $tablet-break){
+    .footer__social{
+        order: 2; // to make social section second in the flex
+    }
+    .social__copyright{
+        display: none; // diable copyright
+    }
+    .social__icon-list{
+        column-gap: 10px; // change space btw social icons
+    }
+}
+
+//phone
+@media (max-width: $phone-break-450){
+    .social__icon-list{
+        flex-wrap: wrap; // allow to wrap social icons
+        width: 115px; // make width for social icons
+        row-gap: 11px; // row gap btw wraped social items
+    }
+}

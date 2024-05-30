@@ -1,0 +1,29 @@
+@use "../../../data" as *;
+
+.burger-menu__list{
+    margin: 32px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include dela-menu;
+}
+
+.burger-list__item{
+    transition: color .1s ease-in-out;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.burger-list__item:hover{
+    color: $red-h;
+}
+.burger-list__item--active{
+    color: $red;
+}
+.burger-list__item--active::after{
+    content: url(../../../../images/icons/nav-icons/burger/icon-more-menu.svg);
+    width: 10px;
+    height: 19px;
+    margin-left: 13px;
+}

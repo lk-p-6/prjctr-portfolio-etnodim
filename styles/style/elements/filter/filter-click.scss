@@ -1,0 +1,18 @@
+@use "../../../data" as *;
+
+.catalogue-nav__dropdown-check-click{
+    width: max-content; // making width of dropdown by their own content
+    display: none; // hide filter on desktop
+    gap: 5px; // to arrow
+    align-items: center; // to center arrow
+    cursor: pointer;
+    position: relative; // making relative for z-index
+    z-index: 2; // to make it above aside content
+}
+
+// tablet version
+@media (max-width: $tablet-break){
+    .catalogue-nav__dropdown-check-click{
+        display: flex; // enable filter section on mobile
+    }
+}

@@ -1,0 +1,15 @@
+@use "../../../data" as *;
+
+// logo
+@import "../../elements/footer/logo.css";
+
+//content
+@import "../../elements/footer/footer-content.css";
+@import "../../elements/footer/footer-nav-list.css";
+@import "../../elements/footer/contact-footer.css";
+@import "../../elements/footer/social-footer.css";
+
+.footer{
+    width: 100%;
+    background-color: $white;
+}

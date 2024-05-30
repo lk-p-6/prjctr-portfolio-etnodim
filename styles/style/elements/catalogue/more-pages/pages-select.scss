@@ -1,0 +1,37 @@
+@use "../../../../data" as *;
+
+.catalogue-pages__select{
+    position: absolute; // make absolute to make it right
+    right: 0; // make it to the right
+    display: flex;
+    column-gap: 9px; // gap btw items
+    @include raleway-p-bold; // font for items
+}
+
+.catalogue-pages__select-item{
+    cursor: pointer;
+
+    transition: color $fast-h ease-in-out; // transition for color on hover
+}
+.catalogue-pages__select-item:hover{
+    color: $dark-gray; // color on hover
+}
+
+.catalogue-pages__select-item--active{
+    color: $gray; // hover on active page
+}
+
+.catalogue-pages__select-item:nth-of-type(3)::after{
+    content: "..."; // dots for more elements
+    margin-left: 9px; // margin left for it
+    cursor: auto;
+}
+.catalogue-pages__select-item-count{
+    margin-right: 9px; // margin right for last number
+}
+
+@media (max-width: $tablet-break){
+    .catalogue-pages__select{
+        display: none // hide pages count;
+    }
+}
